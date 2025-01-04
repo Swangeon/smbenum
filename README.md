@@ -1,7 +1,7 @@
 # SMBEnum
 
 [![GNU GPL3 License](https://img.shields.io/badge/License-GNU_GPL3-brightgreen)](https://www.gnu.org/licenses/gpl-3.0.en.html)
-[![Release](https://img.shields.io/badge/Release-v0.1.0-blue)]()
+[![Release](https://img.shields.io/badge/Release-v0.1.0-blue)](https://github.com/Swangeon/smbenum/releases/tag/v0.1.0)
 
 ## Description
 
