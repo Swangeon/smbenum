@@ -1,0 +1,30 @@
+name: "SMB Testing"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+     runs-on: ubuntu-latest
+
+     services:
+      samba:
+        image: dperson/samba
+        ports:
+          - 445:445
+          - 139:139
+        env:
+          USER: "testuser;testpass"
+          SHARE: "public;/share;yes;no;no;all;none;public"
+        options: >-
+          --name=samba
+          --env TZ=UTC
+          --cap-add NET_ADMIN
+          -v /tmp/public:/share
+
+     steps:
+       - name: Get code
+         uses: actions/checkout@v4
