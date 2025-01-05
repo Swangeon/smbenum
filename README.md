@@ -9,7 +9,7 @@ This tool is for enumerating basic information about an SMB Server.
 
 ## Installation
 
-1. Install all necessary modules: `pip install -r requirements.txt`
+1. Install all necessary modules: `pip install -e .`
 2. Run via python: `python smbenum.py -i 192.168.1.1`
 
 ## Usage
@@ -26,6 +26,7 @@ This tool is for enumerating basic information about an SMB Server.
 
 - Add a basic testing suite.
 - Refactor the code.
+- Add ability to specify a username and password list to brute force logins.
 - Add ability to login via Kerboros if it is the only way to login to the SMB Server.
 - Add enumeration of files within each share of the SMB Server.
 - Add more information to the README like a GIF, Contributions Section, etc.
