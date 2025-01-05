@@ -7,8 +7,8 @@
 
 
 ## Description
-
-This tool is for enumerating basic information about an SMB Server.
+ and take actions 
+This tool is for enumerating basic information about an SMB Server. You can use this against your own SMB server to find out if very basic information that a adversary could use against you is easily obtainable and take actions to secure your server.
 
 ## Installation
 
@@ -28,6 +28,8 @@ This tool is for enumerating basic information about an SMB Server.
 
 - Extend a basic testing suite.
 - Refactor the code.
+- Document the code.
+- Add other fingerprinting techniques to find specific SMB services such as default share names, authentication method analysis, NTLM version support, and possibly network protocol analysis.
 - Add ability to specify a username and password list to brute force logins.
 - Add ability to login via Kerboros if it is the only way to login to the SMB Server.
 - Add enumeration of files within each share of the SMB Server.
